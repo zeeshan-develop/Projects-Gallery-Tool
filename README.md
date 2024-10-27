@@ -1,4 +1,4 @@
-![Alt text](https://blog.zegocloud.com/wp-content/uploads/2024/02/landing-page-frontend-project-1024x576.jpg)
+![Alt text](https://firebasestorage.googleapis.com/v0/b/project-gallery-tool.appspot.com/o/gallerytool%2FUntitled%20design.png?alt=media&token=ea844584-f16e-4590-b156-b5fb7ef139c7)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
