@@ -1,5 +1,10 @@
 "use client";
-import Gallery from "./projects/page";
+import dynamic from "next/dynamic";
+
+const Gallery = dynamic(() => import("./projects/page"), {
+  ssr: false,
+  loading: () => <p>Loading...</p>,
+});
 
 const Home = () => {
   return (
