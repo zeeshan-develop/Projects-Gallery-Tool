@@ -1,16 +1,19 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image"; // Import the Image component
 
 const Postitems = ({ post, del, val }) => {
   return (
     <>
-      {/* card  */}
+      {/* card */}
       <div className="p-4 md:w-[25%]">
-        <div className="h-full border-2 border-gray-200 border-opacity-60  overflow-hidden">
-          <img
-            className="lg:h-56  w-full object-cover object-center shadow-5 transition-transform duration-300 ease-in-out transform hover:scale-110"
+        <div className="h-full border-2 border-gray-200 border-opacity-60 overflow-hidden">
+          <Image
+            className="lg:h-56 w-full object-cover object-center shadow-5 transition-transform duration-300 ease-in-out transform hover:scale-110"
             src={post.image}
             alt="blog"
+            width={500} // Specify a width
+            height={300} // Specify a height
           />
           <div className="p-6">
             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
@@ -20,7 +23,7 @@ const Postitems = ({ post, del, val }) => {
               {post.title}
             </h1>
             <p className="leading-relaxed text-justify mb-3">{post.message}</p>
-            <div className="flex items-center flex-wrap ">
+            <div className="flex items-center flex-wrap">
               <Link
                 href={`/projects/${val}`}
                 className="text-white inline-flex items-center md:mb-2 lg:mb-0 border bg-blue-500 p-4 rounded-md cursor-pointer"
