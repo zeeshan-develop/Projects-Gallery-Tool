@@ -97,6 +97,14 @@ yarn install
 Create a new file named `.env.local` in the root of your project and add the following content:
 
 ```env
+# GoogleCloud
+GOOGLE_Client_ID=
+GOOGLE_CLIENT_SECRET=
+
+# NEXTAUTH
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=
+
 #Firebase
 NEXT_PUBLIC_FIREBASE_API_KEY
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
