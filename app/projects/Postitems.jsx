@@ -5,13 +5,15 @@ import Image from "next/image";
 const Postitems = ({ post, del, val }) => {
   return (
     <>
-      {/* card */}
+      {/* card  */}
       <div className="p-4 md:w-[25%]">
         <div className="h-full border-2 border-gray-200 border-opacity-60 overflow-hidden">
           <Image
             className="lg:h-56 w-full object-cover object-center shadow-5 transition-transform duration-300 ease-in-out transform hover:scale-110"
             src={post.image}
             alt="blog"
+            width={640}
+            height={360}
           />
           <div className="p-6">
             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
