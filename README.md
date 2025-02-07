@@ -53,7 +53,7 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 👉 **Register as a User**: Users can sign up and create a personal projects.
 
-👉 **Add a New Project**: Allows authenticated users to upload their projects (e.g., images, videos, descriptions) to the gallery.
+👉 **Add a New Project**: Allows authenticated users to upload their projects (e.g., images, videos, descriptions).
 
 👉 **Manage Projects on Admin Side**: Administrators can efficiently view and handle all created projects.
 
