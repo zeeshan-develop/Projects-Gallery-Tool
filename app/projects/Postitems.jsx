@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image"; // Import the Image component
+import Image from "next/image";
 
 const Postitems = ({ post, del, val }) => {
   return (
@@ -12,8 +12,8 @@ const Postitems = ({ post, del, val }) => {
             className="lg:h-56 w-full object-cover object-center shadow-5 transition-transform duration-300 ease-in-out transform hover:scale-110"
             src={post.image}
             alt="blog"
-            width={640} // Adjust based on your design
-            height={360} // Adjust based on your design
+            width={640}
+            height={360}
           />
           <div className="p-6">
             <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">

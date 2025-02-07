@@ -9,7 +9,6 @@ import Image from "next/image";
 
 const ProjectDetail = () => {
   const { data: session } = useSession();
-  console.log("i wanna session", session);
   const { posts } = usePosts();
   const { Id: postId } = useParams();
   const detail = posts[postId];
@@ -30,8 +29,8 @@ const ProjectDetail = () => {
                 alt="ecommerce"
                 className="lg:w-full w-full lg:h-60 h-32 object-cover object-center rounded mb-4 shadow-5"
                 src={detail?.image}
-                width={640} // Adjust width as needed
-                height={360} // Adjust height as needed
+                width={640}
+                height={360}
               />
               <div>
                 <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 ">
@@ -48,8 +47,8 @@ const ProjectDetail = () => {
                 <Image
                   alt="blog"
                   src={session?.user.image}
-                  width={48} // Adjust width as needed
-                  height={48} // Adjust height as needed
+                  width={48}
+                  height={48}
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                 />
                 <span className="flex-grow flex flex-col pl-4">
