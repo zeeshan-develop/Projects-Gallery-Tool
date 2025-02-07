@@ -50,8 +50,6 @@ const ProjectDetail = () => {
                   width={48}
                   height={48}
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-                  width={48} // Specify width
-                  height={48} // Specify height
                 />
                 <span className="flex-grow flex flex-col pl-4">
                   <span className="title-font font-medium text-gray-900">
