@@ -1,11 +1,15 @@
 "use client";
-import React from "react";
-import Postitems from "../projects/Postitems";
+import dynamic from "next/dynamic";
 import { usePosts } from "@/context/AppContext";
 import { useSession } from "next-auth/react";
 import Swal from "sweetalert2";
 import { doc, deleteDoc, getFirestore } from "firebase/firestore"; // Make sure to import these from Firebase
 import app from "@/lib/firebase";
+
+const Postitems = dynamic(() => import("../projects/Postitems"), {
+  srr: false,
+  loading: () => <p>Loading...</p>,
+});
 
 const UserProfile = () => {
   const { posts, getPosts } = usePosts();

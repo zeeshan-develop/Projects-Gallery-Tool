@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { FaGithub } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io";
-import Image from "next/image"; // Import Image component
+import Image from "next/image";
 
 const ProjectDetail = () => {
   const { data: session } = useSession();
@@ -17,8 +17,8 @@ const ProjectDetail = () => {
     <div>
       <section className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 mx-auto">
-          <div className="lg:w-4/5 mx-auto flex flex-wrap">
-            <div className="w-full lg:w-1/3">
+          <div className="lg:w-4/5 mx-auto flex flex-wrap ">
+            <div className="w-full lg:w-1/3 ">
               <h2 className="text-sm title-font text-gray-500 tracking-widest">
                 BRAND NAME
               </h2>
@@ -29,8 +29,8 @@ const ProjectDetail = () => {
                 alt="ecommerce"
                 className="lg:w-full w-full lg:h-60 h-32 object-cover object-center rounded mb-4 shadow-5"
                 src={detail?.image}
-                width={500} // Specify width
-                height={300} // Specify height
+                width={640}
+                height={360}
               />
               <div>
                 <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
@@ -47,6 +47,8 @@ const ProjectDetail = () => {
                 <Image
                   alt="blog"
                   src={session?.user.image}
+                  width={48}
+                  height={48}
                   className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                   width={48} // Specify width
                   height={48} // Specify height
